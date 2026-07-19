@@ -1,0 +1,105 @@
+1. Cucumber using Serenity BDD and Screenplay
+
+- Cucumber
++ một framework hỗ trợ Behavior Driven Development (BDD), cho phép viết các kịch bản kiểm thử bằng ngôn ngữ tự nhiên (Gherkin)
++ giúp Tester, Developer và Business Analyst dễ dàng đọc và hiểu các test case
+
+- Serenity BDD là framework hỗ trợ kiểm thử tự động theo mô hình BDD. Serenity có thể tích hợp với Cucumber, JUnit và Selenium để:
++ quản lý test case
++ sinh báo cáo chi tiết sau khi chạy test
++ hỗ trợ Page Object và Screenplay Pattern
++ theo dõi kết quả của từng bước thực hiện
+
+Ưu điểm:
++ Báo cáo trực quan
++ Dễ tích hợp với Selenium
++ Hỗ trợ CI/CD
++ Tăng khả năng bảo trì test
+
+- Screenplay Pattern là một mô hình thiết kế giúp tổ chức mã nguồn kiểm thử rõ ràng hơn so với Page Object
+Các thành phần chính:
++ Actor: Người thực hiện hành động
++ Task: Một nhóm hành động
++ Interaction: Hành động đơn lẻ
++ Question: Kiểm tra kết quả
++ Ability: Khả năng của Actor (ví dụ: sử dụng trình duyệt)
+
+2. Playwright
+là framework kiểm thử tự động mã nguồn mở do Microsoft phát triển, dùng để kiểm thử ứng dụng web trên nhiều trình duyệt
++ Chromium
++ Firefox
++ WebKit (Safari)
+
+Ngôn ngữ lập trình:
++ javaScript
++ TypeScript
++ Java
++ Python
++ C#
+Tính năng nổi bật
+
++ Hỗ trợ nhiều trình duyệt (Cross-browser Testing)
++ Auto Waiting (tự động chờ phần tử sẵn sàng)
++ Chạy test song song
++ Chụp ảnh màn hình và quay video
++ Network Mocking
++ API Testing
++ Mobile Emulation
+
+Ưu điểm
++ Tốc độ thực thi nhanh
++ Hoạt động ổn định
++ Tự động chờ phần tử
++ Hỗ trợ nhiều trình duyệt
++ Có công cụ Trace Viewer giúp debug dễ dàng
+Nhược điểm
++ API khác Selenium nên cần thời gian làm quen
++ Hệ sinh thái Java chưa phong phú bằng JavaScript/TypeScript
+
+====================================================
+
+Automation Test (Kiểm thử tự động) là quá trình sử dụng các công cụ hoặc chương trình để tự động thực hiện các kịch bản kiểm thử, 
+so sánh kết quả thực tế với kết quả mong đợi và tạo báo cáo, thay vì kiểm thử thủ công
+
+Mục đích:
++ Tăng tốc độ kiểm thử
++ Giảm công sức của tester
++ Đảm bảo chất lượng phần mềm
++ Phát hiện lỗi sớm
+
+Automation Test được sử dụng vì những lợi ích sau:
++ Tiết kiệm thời gian: Có thể chạy hàng trăm hoặc hàng nghìn test case trong thời gian ngắn
++ Giảm lỗi do con người: Các bước được thực hiện chính xác và nhất quán
++ Hỗ trợ Regression Testing: Dễ dàng kiểm tra lại các chức năng sau khi có thay đổi hoặc sửa lỗi
++ Chạy trên nhiều môi trường: Có thể kiểm thử trên nhiều trình duyệt, hệ điều hành hoặc thiết bị khác nhau
++ Tích hợp với CI/CD: Tự động chạy kiểm thử sau mỗi lần build hoặc deploy
++ Tiết kiệm chi phí lâu dài: Mặc dù chi phí xây dựng ban đầu cao, nhưng giảm đáng kể chi phí kiểm thử về sau
+
+
+Chạy Automation Test trong các trường hợp sau:
++ Sau mỗi lần Developer commit hoặc merge code
++ Khi có bản build mới
++ Trước khi phát hành (Release) sản phẩm
++ Thực hiện Regression Testing sau khi sửa lỗi hoặc thêm chức năng mới
++ Chạy Smoke Test để kiểm tra các chức năng quan trọng
++ Chạy theo lịch 
++ Kiểm thử trên nhiều trình duyệt hoặc nhiều môi trường khác nhau
+
+Selenium bao gồm 4 thành phần chính:
+
+- Selenium IDE
++ Công cụ ghi và phát lại (Record & Playback)
++ Phù hợp cho người mới học hoặc tạo test nhanh
+
+- Selenium WebDriver
++ Thành phần phổ biến nhất
++ Điều khiển trình duyệt trực tiếp bằng mã nguồn
++ Hỗ trợ nhiều ngôn ngữ như Java, Python, C#, JavaScript,...
+
+- Selenium Grid
++ Cho phép chạy kiểm thử song song trên nhiều máy, nhiều trình duyệt và nhiều hệ điều hành
++ Giúp giảm thời gian thực thi test
+
+- Selenium RC (Remote Control)
++ Phiên bản cũ của Selenium
++ Hiện đã ngừng phát triển và được thay thế bởi Selenium WebDriver
