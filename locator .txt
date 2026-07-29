@@ -1,0 +1,38 @@
+1. Sau khi add to cart 3 sản phẩm bất kỳ, hãy tìm tất cả các locator trong màn hình: 
+Your Cart, Checkout: Your Information, Checkout: Overview và Checkout: Complete!
+
+Your Cart
+//span[text()='Your Cart']
+//span[@class='title']
+
+Checkout: Your Information
+//span[text()='Checkout: Your Information']
+//span[@class='title']
+
+Checkout: Overview 
+//span[text()='Checkout: Overview']
+//span[@class='title']
+
+Checkout: Complete!
+//span[text()='Checkout: Complete!']
+//span[@class='title']
+
+2. Tìm tất cả locator trong đường dẫn sau: https://saucelabs.com/request-demo
+//h1[@class='hero-heading']
+//p[@class='hero-eyebrow']
+//p[@class= 'hero-body']
+//canvas[@id= 'cheetahCanvas']
+//p[@class= 'persona-logo-strip-eyebrow']
+//div[@class='persona-logo-strip-marquee-track']
+//div[@class='live-demo-card']
+//h2[@class='home-strategic-outcomes-heading']
+//div[@data-wf-label='Card · blue']
+//div[@data-wf-label='Card · red']
+//div[@data-wf-label='Card · yellow']
+//p[text()='90']
+//p[text()='47']
+//h1[@class='home-segmentation-title']
+//h2[@class='home-operational-outcomes-h2']
+//div[@data-wf-label='Card · 1']
+//div[@data-wf-label='Card · 2']
+//div[@data-wf-label='Card · 3']
